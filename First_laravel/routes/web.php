@@ -24,8 +24,16 @@ Route::get('/home', function () {
 
 Route::get('/about', function () {
    return view("about");
-})->middleware('check');
+});
+
+Route::get('/blog', function () {
+    return view("blog");
+ });
+
+ Route::get('/service', function () {
+    return view("service");
+ });
 
 Route::get('/contact', function () {
     return view("contact");
- });
+ })->middleware('check');

@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Welcom</title>
+        <title>Service</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -41,14 +41,13 @@
                  
                 </div>
  
-                <h1 style="color:red">Home Page</h1>
-             <a style="color:#fff" href="{{ url('/') }}">Home</a> |
+                <h1 style="color:red">Service Page</h1>
+                <a style="color:#fff" href="{{ url('/') }}">Home</a> |
              <a style="color:#fff" href="{{ URL::to('/about') }}">About</a> |
              <a style="color:#fff" href="{{ URL::to('/blog') }}">Blog</a> |
              <a style="color:#fff" href="{{ URL::to('/service') }}">Service</a> |
              <a style="color:#fff" href="{{ URL::to('/contact') }}">Contact</a> |
-
-
+             
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
                     <div class="grid grid-cols-1 md:grid-cols-2">
                         <div class="p-6">
