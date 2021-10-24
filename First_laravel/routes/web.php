@@ -34,6 +34,6 @@ Route::get('/blog', function () {
     return view("service");
  });
 
-Route::get('/contact', function () {
+ Route::get('/contact', function () {
     return view("contact");
  })->middleware('check');

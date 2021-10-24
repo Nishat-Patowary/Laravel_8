@@ -46,7 +46,7 @@
              <a style="color:#fff" href="{{ URL::to('/about') }}">About</a> |
              <a style="color:#fff" href="{{ URL::to('/blog') }}">Blog</a> |
              <a style="color:#fff" href="{{ URL::to('/service') }}">Service</a> |
-             <a style="color:#fff" href="{{ URL::to('/contact') }}">Contact</a> |
+             <a style="color:#fff" href="{{ URL::to('/contact') }}">Contact </a> |
 
 
                 <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
