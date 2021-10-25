@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class Categorycontroller extends Controller
 {
     public function Allcat(){
-        return view()
+        return view('admin.category.index');
     }
 }
