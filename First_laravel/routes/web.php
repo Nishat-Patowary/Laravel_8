@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controller\ContactController;
+use App\Http\Controller\Categorycontroller;
+
 use App\Models\user;
 /*
 |--------------------------------------------------------------------------
@@ -38,6 +40,10 @@ Route::get('/blog', function () {
     return view("contact");
  })->middleware('check');
 
+ //category controller 
+ Route::get('/category/all', [Categorycontroller::class,'Allcat'])->name('all.category');
+
+ 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
    $users = user::all();
     return view('dashboard',compact('users'));
