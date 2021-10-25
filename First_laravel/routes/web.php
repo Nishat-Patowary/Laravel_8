@@ -41,7 +41,7 @@ Route::get('/blog', function () {
  })->middleware('check');
 
  //category controller 
- Route::get('/category/all', [Categorycontroller::class,'AllCat'])->name('all.category');
+ Route::get('/category/all', [Categorycontroller::class, 'AllCat'])->name('all.category');
 
  
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
