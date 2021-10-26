@@ -14,6 +14,10 @@ class Categorycontroller extends Controller
         $validated = $request->validate([
             'Category_name' => 'required|unique:categories|max:255',
         
-        ]);
+        ],
+    [
+        'category_name.required' => 'Please input category Name',
+        'category_name.max' => 'Category less Then 255chars',
+    ]);
     }
 }
