@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\catagory;
+use App\Models\category;
 use Auth;
 use Illuminate\Support\Carbon;
 
