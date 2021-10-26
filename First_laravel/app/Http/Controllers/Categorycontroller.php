@@ -23,11 +23,11 @@ class Categorycontroller extends Controller
         'category_name.max' => 'Category less Then 255chars',
     ]);
 
-    Category::insert([
-        'Category_name' => $request->category_name,
+    category::insert([
+        'category_name' => $request->Category_name,
         'user_id' => Auth::user()->id,
         'created_at' => Carbon::now()
-    ])
+    ]);
     
 
 
