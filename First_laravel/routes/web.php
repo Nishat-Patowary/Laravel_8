@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controller\ContactController;
-use App\Http\Controller\Categorycontroller;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Categorycontroller;
 
 use App\Models\user;
 /*
@@ -36,9 +36,7 @@ Route::get('/blog', function () {
     return view("service");
  });
 
- Route::get('/contact', function () {
-    return view("contact");
- })->middleware('check');
+Route::get('/contact', [ContactController::class, 'index']);
 
  //category controller 
  Route::get('/category/all', [Categorycontroller::class, 'AllCat'])->name('all.category');
