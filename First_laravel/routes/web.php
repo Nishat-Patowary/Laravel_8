@@ -36,7 +36,8 @@ Route::get('/blog', function () {
     return view("service");
  });
 
-Route::get('/contact', [ContactController::class, 'index']);
+Route::get('/contact', [ContactController::class, 'index'])->middleware('check');
+
 
  //category controller 
  Route::get('/category/all', [Categorycontroller::class, 'AllCat'])->name('all.category');
