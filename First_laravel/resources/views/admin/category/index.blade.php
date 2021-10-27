@@ -34,12 +34,12 @@
   </thead>
   <tbody>
      
- @foreach($categories as $category)
+ @foreach($categories as $category) 
     <tr>
       <th scope="row"></th>
-      <td>{{ category->category_name}}</td>
-      <td>{{ category->user_id}}</td>
-      <td>{{ category->created_at}}</td>
+      <td>{{ $category->category_name}}</td>
+      <td>{{ $category->user_id}}</td>
+      <td>{{ $category->created_at}}</td>
 
    </tr>
   @endforeach
