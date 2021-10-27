@@ -11,7 +11,8 @@ use Illuminate\Support\Facades\DB;
 class Categorycontroller extends Controller
 {
     public function AllCat(){
-        $categories = category::latest()->get();
+        //$categories = category::latest()->get();
+        $categories = DB::table('categories')->latest()->get();
         return view('admin.category.index', compact('categories'));
     }
 
