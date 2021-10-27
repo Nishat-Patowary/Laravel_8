@@ -33,14 +33,21 @@
     </tr>
   </thead>
   <tbody>
-     
+
+     @php($i= 1)
  @foreach($categories as $category) 
     <tr>
-      <th scope="row"></th>
+      <th scope="row">{{ $i++}}</th>
       <td>{{ $category->category_name}}</td>
       <td>{{ $category->user_id}}</td>
-      <td>{{ $category->created_at}}</td>
-
+      <td>
+        @if($category->created_at == NULL)
+        <span class='text-danger'>No Date Set</span>
+        @else
+        {{ $category->created_at->diffForHumans()}}
+      @endif
+      </td>
+    
    </tr>
   @endforeach
   </tbody>
