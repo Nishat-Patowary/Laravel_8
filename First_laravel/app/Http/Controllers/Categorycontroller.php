@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\category;
 use Auth;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\DB;
 
 class Categorycontroller extends Controller
 {
@@ -36,6 +37,14 @@ class Categorycontroller extends Controller
    $category->category_name = $request->Category_name;
    $category->user_id = Auth::user()->id;
    $category->save();
+*/
+
+/*
+  $data = array();
+  $data['category_name'] = $request->Category_name;
+  $data['user_id'] = Auth::user()->id;
+  DB::table('categories')->insert($data);
+  
 */
    return Redirect()->back()->with('success','Category Inserted Successfully');
    
