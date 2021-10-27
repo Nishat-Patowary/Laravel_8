@@ -27,21 +27,22 @@
   <thead>
     <tr>
       <th scope="col">Sl No</th>
-      <th scope="col">Name</th>
-      <th scope="col">Email</th>
+      <th scope="col">Categoy Name</th>
+      <th scope="col">User</th>
       <th scope="col">Created_at</th>
     </tr>
   </thead>
   <tbody>
      
-
+ @foreach($categories as $category)
     <tr>
       <th scope="row"></th>
-      <td></td>
-      <td></td>
+      <td>{{ category->category_name}}</td>
+      <td>{{ category->user_id}}</td>
+      <td>{{ category->created_at}}</td>
 
    </tr>
-
+  @endforeach
   </tbody>
 </table>
         </div>
