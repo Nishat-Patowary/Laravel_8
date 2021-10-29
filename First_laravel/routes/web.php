@@ -38,15 +38,19 @@ Route::get('/blog', function () {
 
 Route::get('/contact', [ContactController::class, 'index'])->middleware('check');
 
-Route::get('/category/all', [Categorycontroller::class, 'AllCat']);
+
+
+
+
+
 
  //category controller 
- Route::get('category/edit/{id}', [Categorycontroller::class, 'Edit'])->name('all.category');
-
+ Route::get('/category/all', [Categorycontroller::class, 'AllCat'])->name('all.category');
 
  Route::post('/category/add', [Categorycontroller::class, 'AddCat'])->name('store.category');
 
- 
+ Route::get('category/edit/{id}', [Categorycontroller::class, 'Edit'])->name('all.category');
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
    $users = user::all();
     return view('dashboard',compact('users'));
