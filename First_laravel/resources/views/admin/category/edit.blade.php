@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-         Edit <b></b>
+         Edit Category <b></b>
         
         </h2>
     </x-slot>
@@ -13,7 +13,7 @@
         <div class="row">
     
 
-    <div class="col-md-4">
+    <div class="col-md-8">
       <div class="card">
         <div class="card-header">Edit category</div>
         <div class="card-body">
