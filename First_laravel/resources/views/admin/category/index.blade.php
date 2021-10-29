@@ -36,7 +36,7 @@
   </thead>
   <tbody>
 
-      @php($i= 1)
+     <!-- @php($i= 1) -->
  @foreach($categories as $category) 
     <tr>
       <th scope="row">{{ $categories->firstItem()+$loop->index }}</th>
@@ -51,7 +51,7 @@
       </td>
       <td>
 
-      <a href="{{  url('category/edit/'.$category->id) }}" class="btn btn-info">Edit</a>
+      <a href="{{ url('category/edit/'.$category->id) }}" class="btn btn-info">Edit</a>
       <a href="" class="btn btn-danger">Delet</a>
 
       </td>

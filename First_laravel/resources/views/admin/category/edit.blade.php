@@ -24,7 +24,7 @@
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Update Category Name</label>
     <input type="text" name="Category_name" class="form-control" 
-    id="exampleInputEmail1" aria-describedby="emailHelp" value=" {{ $categories-> category_name }}">
+    id="exampleInputEmail1" aria-describedby="emailHelp" value=" {{ $categories->category_name }}">
     <div id="emailHelp" class="form-text"></div>
 
     @error('category_name')
