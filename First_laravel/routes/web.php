@@ -50,6 +50,7 @@ Route::get('/contact', [ContactController::class, 'index'])->middleware('check')
  Route::post('/category/add', [Categorycontroller::class, 'AddCat'])->name('store.category');
 
  Route::get('/category/edit/{id}', [Categorycontroller::class, 'Edit']);
+ Route::post('/category/update/{id}', [Categorycontroller::class, 'Update']);
  
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
