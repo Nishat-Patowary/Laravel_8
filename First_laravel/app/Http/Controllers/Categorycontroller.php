@@ -65,7 +65,7 @@ class Categorycontroller extends Controller
   }
 
   public function Update(Request $request, $id){
-      $update = category::find($id)->update([
+      $update = Category::find($id)->update([
         'category_name' => $request->category_name,
         'user_id' => Auth::user()->id 
 
