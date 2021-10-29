@@ -71,7 +71,7 @@ class Categorycontroller extends Controller
 
       ]);
 
-      return Redirect()->route('all.category')->with('success','Category Inserted Successfully');
+      return Redirect()->route('all.category')->with('success','Category Updated Successfully');
 
       
   }
