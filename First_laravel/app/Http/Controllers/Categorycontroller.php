@@ -40,20 +40,20 @@ class Categorycontroller extends Controller
     ]);
     
 
-/*
-   $category = new Category;
-   $category->category_name = $request->Category_name;
-   $category->user_id = Auth::user()->id;
-   $category->save();
-*/
 
-/*
-  $data = array();
-  $data['category_name'] = $request->Category_name;
-  $data['user_id'] = Auth::user()->id;
-  DB::table('categories')->insert($data);
+  // $category = new Category;
+  // $category->category_name = $request->Category_name;
+  // $category->user_id = Auth::user()->id;
+  // $category->save();
+
+
+
+ // $data = array();
+ // $data['category_name'] = $request->Category_name;
+ // $data['user_id'] = Auth::user()->id;
+ // DB::table('categories')->insert($data);
   
-*/
+
    return Redirect()->back()->with('success','Category Inserted Successfully');
    
     }
@@ -64,16 +64,17 @@ class Categorycontroller extends Controller
 
   }
 
-  public function Update(Request $request, $id){
-      $update = Category::find($id)->update([
-        'category_name' => $request->category_name,
-        'user_id' => Auth::user()->id 
+  //public function Update(Request $request, $id){
+    //  $update = Category::find($id)->update([
+    //    'category_name' => $request->category_name,
+     //   'user_id' => Auth::user()->id 
 
-      ]);
+     // ]);
 
-      return Redirect()->route('all.category')->with('success','Category Updated Successfully');
+    //  return Redirect()->route('all.category')->with('success','Category Updated Successfully');
 
       
-  }
+ // }
+  
     
 }
