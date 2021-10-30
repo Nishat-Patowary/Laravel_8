@@ -52,7 +52,7 @@
       <td>
 
       <a href="{{ url('category/edit/'.$category->id) }}" class="btn btn-info">Edit</a>
-      <a href="" class="btn btn-danger">Delet</a>
+      <a href="{{ url('softdelete/category/.$category->id' )}}" class="btn btn-danger">Delet</a>
 
       </td>
     
