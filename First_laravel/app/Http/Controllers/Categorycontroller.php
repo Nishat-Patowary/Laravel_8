@@ -18,8 +18,10 @@ class Categorycontroller extends Controller
 
 
         $categories = category::latest()->paginate(5);
+        $trachCat = category::onlyTrashed()-latest()->paginate(3);
+
        //$categories = DB::table('categories')->latest()->paginate(5);
-        return view('admin.category.index', compact('categories'));
+        return view('admin.category.index', compact('categories','trachCat'));
     }
 
     public function AddCat(Request $request){
