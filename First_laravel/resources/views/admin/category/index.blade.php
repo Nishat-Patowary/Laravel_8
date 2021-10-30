@@ -103,7 +103,7 @@
 
 
 
-
+<!-- Trash part --> 
         <div class="container">
 
 <div class="row">
@@ -111,7 +111,7 @@
    <div class="card">
 
 
-     <div class="card-header">All Category</div>
+     <div class="card-header">Trash List</div>
   
 
 <table class="table">
@@ -128,7 +128,7 @@
 <tbody>
 
 <!-- @php($i= 1) -->
-@foreach($categories as $category) 
+@foreach($trachCat as $category) 
 <tr>
 <th scope="row">{{ $categories->firstItem()+$loop->index }}</th>
 <td>{{ $category->category_name}}</td>
@@ -146,44 +146,25 @@
 <a href="" class="btn btn-danger">Delet</a>
 
 </td>
-
 </tr>
 @endforeach
+
 </tbody>
 </table>
 
-{{ $categories->links() }}
+{{ $trachCat->links() }}
 
 </div>
 </div>
 
 <div class="col-md-4">
-<div class="card">
-<div class="card-header">All category</div>
-<div class="card-body">
 
 
-<form action="{{ route('store.category') }}" method="POST">
-@csrf
-<div class="mb-3">
-<label for="exampleInputEmail1" class="form-label">Category Name</label>
-<input type="text" name="Category_name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-<div id="emailHelp" class="form-text"></div>
 
-@error('category_name')
-<span class="text-danger">{{ $message}}</span>
-@enderror
-</div>
-
-<button type="submit" class="btn btn-primary">Add Category</button>
-</form>
-</div>
-</div>
-</div>
 </div>
 </div>
 
-
+<!-- End Trush --> 
 
 
 
@@ -195,5 +176,5 @@
 
 
         
-    </div>
+</div>
 </x-app-layout>
