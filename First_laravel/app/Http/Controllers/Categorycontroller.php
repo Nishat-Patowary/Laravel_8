@@ -85,5 +85,10 @@ class Categorycontroller extends Controller
       
   }
   
+  public function SoftDelete($id){
+    $delete = category::find::($id)->delete();
+    return Redirect()->back()->with('success','Category Soft Delete Successfully');
+    
+  }
     
     }
