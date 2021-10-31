@@ -73,6 +73,11 @@ class Categorycontroller extends Controller
         'category_name' => $request->category_name,
         'user_id' => Auth::user()->id 
 
+
+
+
+        
+
       ]);
 
     // $data = array();
