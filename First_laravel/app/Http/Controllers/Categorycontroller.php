@@ -74,7 +74,6 @@ class Categorycontroller extends Controller
         'user_id' => Auth::user()->id 
 
 
-
         
       ]);
 
