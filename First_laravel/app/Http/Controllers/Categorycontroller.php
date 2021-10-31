@@ -77,7 +77,6 @@ class Categorycontroller extends Controller
 
 
         
-
       ]);
 
     // $data = array();
